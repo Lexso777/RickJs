@@ -1,0 +1,315 @@
+.header {
+    box-shadow: -2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    height: 60px;
+}
+
+.header__component {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logorick {
+    text-align: center;
+    margin-top: 16px;
+}
+.burger__btn{
+    display: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-left: auto;
+}
+.burger__btn span{
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #000000;
+    left: 0px;
+    transition: transform .5s, opacity .5s;
+}
+.burger__btn span:nth-child(1){
+    transform: translateY(-10px);
+}
+.burger__btn span:nth-child(3){
+    transform: translateY(10px);
+}
+.burger__btn.open span:nth-child(2) {
+    opacity: 0;
+}
+.burger__btn.open span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.burger__btn.open span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0;
+}
+
+.nav ul li a {
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.character__info {
+    display: flex;
+    position: relative;
+}
+
+.arrow_back {
+    margin-top: 44px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.arrow_back .arrow {
+    margin-right: 10px;
+    transition: fill 0.3s ease;
+}
+
+.arrow_back:hover .arrow path {
+    fill: #06a147;
+}
+
+.arrow_back:hover {
+    transform: translateX(10px);
+}
+
+.arrow_back:hover a {
+    color: #06a147;
+}
+
+.arrow_back a {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+.character__box {
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.character__img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px solid rgb(242, 242, 247);
+    border-radius: 150px;
+    background: url();
+}
+
+.character__name {
+    color: rgb(8, 31, 50);
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.Informations__Episodes {
+    display: flex;
+    margin-top: 42px;
+}
+
+.Informations {
+    flex: 1;
+    margin-left: 80px;
+}
+
+.Episodes {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.Informations__title {
+    color: rgb(142, 142, 147);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+}
+
+.Episodes__title {
+    color: rgb(142, 142, 147);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+}
+
+.additional__info {
+    margin-top: 36px;
+}
+.additional__specification {
+    position: relative;
+}
+.arrow_right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-55%);
+}
+.additional__title {
+    color: rgb(8, 31, 50);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    margin-top: 9px;
+}
+
+.additional__name {
+    color: rgb(110, 121, 140);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.border__line {
+    margin-top: 11px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+}
+.disabled{
+    display: none;
+}
+.additional__date{
+    color: rgb(142, 142, 147);
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.additional__episodes{
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px){
+
+    .burger__btn{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        z-index: 1;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #fff;
+        transform: translateX(-100%); 
+        transition: transform .5s ease-in-out;
+    }
+    .nav ul{
+        position: relative;
+        display: block;
+    }
+    .nav ul li{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .nav.open{
+        transform: translateX(0%);
+    }
+    .character__img {
+        width: 146px;
+        height: 148px;
+        margin-top: 50px;
+    }
+    .arrow_back {
+        margin-top: 24px;
+        margin-left: 25px;
+    }
+    .character__name {
+        font-size: 38px;
+    }
+    .Informations__Episodes {
+        display: block;
+        align-items: center;
+        
+    }
+    .Informations {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .Episodes {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
+}

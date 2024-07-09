@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="episodes.css">
+    <link rel="stylesheet" href="../nullstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__component">
+            <div class="logo">
+                <img src="../image/logo-black 1 (2).svg" alt="#">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../characterPage/character.html">Characters</a></li>
+                    <li><a href="../locationPage/locations.html">Locations</a></li>
+                    <li><a href="../episodesPage/episodes.html">Episodes</a></li>
+                </ul>
+            </nav>
+            <button class="burger__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="logorick"><img src="../image/rick-and-morty2 1.svg" alt=""></div>
+        <div class="filters">
+            <div class="input__container">
+                <svg class="input__icon" width="17.489990" height="17.490005" viewBox="0 0 17.49 17.49" fill="black"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Vector"
+                        d="M12.5 11L11.71 11L11.43 10.73C12.41 9.59 13 8.1 13 6.5C13 2.91 10.09 0 6.5 0C2.9 0 0 2.91 0 6.5C0 10.09 2.9 13 6.5 13C8.1 13 9.59 12.41 10.73 11.43L11 11.71L11 12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4 4.01 2 6.5 2C8.98 2 11 4 11 6.5C11 8.99 8.98 11 6.5 11Z"
+                        fill="#000000" fill-opacity="0.540000" fill-rule="nonzero" />
+                </svg>
+                <input type="text" id="input" class="search"
+                    placeholder="Filter by name or episode (ex. S01 or S01E02)">
+            </div>
+        </div>
+        <div class="EpisodesBox" id="EpisodesBox">
+
+        </div>
+        <button class="buttonShowMore" id="buttonShowMore">Load More</button>
+    </div>
+</body>
+<script src="episodes.js"></script>
+
+</html>
